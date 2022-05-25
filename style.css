@@ -794,6 +794,7 @@ li {
 
 .about-us-content > p {
     margin-bottom: 0;
+    text-justify: auto;
 }
 
 .about-us-second-part {
@@ -1005,10 +1006,10 @@ li {
     margin-right: 67.5px;
 }
 
-.reservation-form .form-control,
+
 .contact-form .form-control {
     border: none;
-    border-bottom: 1px solid #2903d3ea;
+    border-bottom: 1px solid #ffffffea;
     border-radius: 100;
     margin-bottom: 15px;
     padding: 15px 0;
@@ -1022,7 +1023,13 @@ li {
 .contact-form .form-control:focus {
     box-shadow: none;
     color: rgb(0, 0, 0);
+    color: #000000;
+    background-color: #fff;
+    border-color: #e05607;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(212, 76, 13, 0.562);
 }
+
 
 .reservation-form textarea.form-control,
 .contact-form textarea.form-control {
@@ -1033,7 +1040,7 @@ li {
 /* Footer Area CSS */
 
 .caviar-footer-area {
-    background-color: #000000;
+    background-color: #bd61453d;
     padding: 40px 0;
     text-align: center;
 }
@@ -1062,7 +1069,7 @@ li {
 }
 
 .breadcumb-content h2 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 60px;
     line-height: 1;
     margin-bottom: 70px;
@@ -1090,13 +1097,13 @@ li {
     border: none;
     background-color: transparent;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0 15px;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.60);
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     outline: none;
 }
 
@@ -1163,7 +1170,7 @@ li {
     border-radius: 50%;
     line-height: 42px;
     font-size: 20px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-right: 30px;
     text-align: center;
     -webkit-transition-duration: 500ms;
@@ -1182,7 +1189,7 @@ li {
 /* Contact Area CSS */
 
 .breadcumb-content > p {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -1193,7 +1200,7 @@ li {
 }
 
 .breadcumb-content p a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-right: 15px;
     display: inline-block;
 }
@@ -1219,7 +1226,74 @@ li {
     letter-spacing: 2px;
     color: #ff0000;
     margin-bottom: 40px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#containercontact div.mb-3{
+
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000000;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.mensaje{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #000000;
+    margin-bottom: .1px;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+}
+
+
+.departamento{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #000000;
+    margin-bottom: .4px;
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+}
+
+.btnenviar{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c20606;
+    margin-bottom: 20px;
+    font-family: 'V', sans-serif;
+}
+
+#sugerencias{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #0a3ad8;
+    margin-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+}
+
+.email{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #000000;
+    margin-bottom: .4px;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
 }
 
 /* Regular Page Area CSS */

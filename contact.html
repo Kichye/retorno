@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body id="containercontact">
     <!-- Preloader -->
     <div id="preloader">
         <div class="caviar-load"></div>
@@ -98,9 +98,7 @@
                                 </li>
                             </ul>
                             <!-- Search Btn -->
-                            <div class="caviar-search-btn">
                                
-                            </div>
                         </div>
                     </nav>
                 </div>
@@ -135,39 +133,58 @@
         <div class="contact-form-area d-flex justify-content-end">
             <div class="contact-form">
                 <div class="contact-form-title">
-                    <p>Contacto</p>
+                    
+                    <div id="sugerencias"></div>
                 </div>
-                <form action="#">
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="form-control" placeholder="Apellido">
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="form-control" placeholder="Teléfono">
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-
-                        <div class="col-12">
-                            <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        </div>
-                        <form>
-                            Seleccione una opción
-                            <select>
-                                <option disabled selected=""> Selecciona una opción </option>
-                                <option>Ventas</option>
-                                <option>Compras</option>
-                                <option>Recursos Humanos</option>
-                            </select>
-                        </form>
-                        <div class="col-12">
-                            <button type="submit" class="btn caviar-btn"><span></span>Enviar</button>
-                        </div>
+                     
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationTooltip01">Nombre</label>
+                        <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationTooltip02">Apellido</label>
+                        <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                      </div>
                     </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationTooltip03">Teléfono</label>
+                        <input type="text" class="form-control" id="validationTooltip03" required>
+                       
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="departamento">
+                        <label for="validationTooltip04">Departamento</label>
+                        <select class="custom-select" id="validationTooltip04" required>
+                          <option selected disabled value=""></option>
+                          <option>Ventas</option>
+                          <option>Compras</option>
+                          <option>Recursos Humanos</option>
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="email">
+                        <label for="validationTooltip02">Email</label>
+                        <input type="text" class="form-control" id="validationemail" value="" required>
+                       </div>
+                      </div>
+                     
+                      <form class="was-validated">
+                        <div class="mensaje">
+
+                          <label for="validationTextarea">Mensaje</label>
+                          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Escribe aquí" required></textarea>
+                          
+                        </div>
+                      </form>
+                      
+                    </div>
+                    <div class="btnenviar">
+                    <a href="" class="btn caviar-btn"><span></span>Enviar</a>
+                </div>
                 </form>
             </div>
         </div>
@@ -175,6 +192,7 @@
             <img src="imge/banner_3.png" alt="">
         </div>
     </div>
+   
     <!-- ***** Contact Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
