@@ -74,14 +74,14 @@
                                 </li>
                              
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#about">Quienes Somos</a>
+                                    <a class="nav-link" href="index.html#about">Quienes Somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#menu">Productos</a>
+                                    <a class="nav-link" href="index.html#menu">Productos</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#testimonial">Testimonios</a>
+                                    <a class="nav-link" href="index.html#testimonial">Testimonios</a>
                                 </li>
                                
                                 <li class="nav-item">
@@ -91,7 +91,7 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="menu.html">Productos Completos</a>
-                                        <a class="dropdown-item" href="servicios.html">Servicios</a>
+                                        <a class="dropdown-item" href="servicios.html">Sucursales</a>
                                         
                                     </div>
                                 </li>
@@ -114,6 +114,15 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content"></div>
+                    <div class="breadcumb-content">
+                        <h2>Sucursales</h2>
+                        
+                        
+                             
+                             <p> </p>
+                            
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,46 +130,534 @@
     <!-- ***** Breadcumb Area End ***** -->
 
     <!-- ***** Regular Page Area Start ***** -->
-    <section class="caviar-regular-page section-padding-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <div class="regular-page-content">
-                        <div class="post-title">
-                            <h2>Proin et sem cursus, placerat odio quis, consectetur turpis</h2>
-                            <a href="#">Maecenas sit amet quam magna</a>
-                        </div>
-                        <div class="post-content">
-                            <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo. Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. Vestibulum nec libero vel sapien dictum euismod eu ac justo.</p>
-                            <blockquote>
-                                <img src="img/icons/quotation-mark.svg" alt="">
-                                <div class="blockquote-content">
-                                    <h6>Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus, quis.</h6>
-                                    <p>Liam Neeson</p>
-                                </div>
-                            </blockquote>
-                            <p>el retorno </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Regular Page Area End ***** -->
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+        <script type="text/javascript" src="js/date.js"></script>
+        <script type="text/javascript" src="js/timeago.js"></script>
+        <script type="text/javascript" src="js/scrollTo.min.js"></script>
+        <style>
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          #map {
+            height: 100%;
+            margin: 50px;
+            padding: 50px;
+          }
+        </style>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAwlfuX-sxLx6HovGPYwwpQaUEn0AWoQOI&sensor=true"></script>
+      </head>
+      <body>
+        
+        <script>
+    
+    function initialize() {
+      var myLatLng = {lat: 20.9621077, lng: -89.623277};
+      var mapOptions = {
+        zoom: 14,
+        center:myLatLng
+      }
+    
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Suc.65',
+        icon:'imge/corona_titulo.png',
+        
+      });
+      var marker = new google.maps.Marker({
+          position: {lat: 20.968003, lng: -89.624172},
+          map: map,
+	  title: 'Suc 62-1',
+      icon:'imge/corona_titulo.png',
 
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="caviar-footer-area">
+        });
+
+      var marker = new google.maps.Marker({
+          position: {lat: 20.965761, lng: -89.619511},
+          map: map,
+	  title: 'Suc 63-1',
+      icon:'imge/corona_titulo.png',
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 20.959092, lng: -89.593722},
+          map: map,
+	  title: 'Suc 65',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.965003, lng: -89.624733},
+          map: map,
+	  title: 'Suc 62-2',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.9850119, lng: -89.5417228},
+          map: map,
+	  title: 'Suc Los Héroes',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.977839, lng: -89.604364},
+          map: map,
+	  title: 'Suc T-1',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.999514, lng: -89.596306},
+          map: map,
+	  title: 'Suc Plaza Fiesta',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.980836, lng: -89.584911},
+          map: map,
+	  title: 'Suc Ávila',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 21.012072, lng: -89.636347},
+          map: map,
+	  title: 'Suc Chuburná',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.967028, lng: -89.619775},
+          map: map,
+	  title: 'Suc 56',
+      icon:'imge/corona_titulo.png',
+
+        });
+        
+        var marker = new google.maps.Marker({
+          position: {lat: 20.941194, lng: -89.597347},
+          map: map,
+	  title: 'Suc Kukulcán',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.993472, lng: -89.652325},
+          map: map,
+	  title: 'Suc Matriz Plaza Dorada',
+      icon:'imge/corona_titulo.png',
+
+        });
+      
+        var marker = new google.maps.Marker({
+          position: {lat: 20.986069, lng: -89.633286},
+          map: map,
+	  title: 'Suc Maya',
+      icon:'imge/corona_titulo.png',
+
+        });
+      
+        var marker = new google.maps.Marker({
+          position: {lat: 20.960375, lng: -89.594117},
+          map: map,
+	  title: 'Oficinas',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 21.0012, lng: -89.572831},
+          map: map,
+	  title: 'Suc Xtabay',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.964003, lng: -89.630500},
+          map: map,
+	  title: 'Suc Producción 67',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.961717, lng: -89.620033},
+          map: map,
+	  title: 'Suc 69',
+      icon:'imge/corona_titulo.png',
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.9999361, lng: -89.6894157},
+          map: map,
+	  title: 'Suc Caucel',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.9440538, lng: -89.6280026},
+          map: map,
+	  title: 'Suc Plaza Velaire',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 20.9321279, lng: -89.6212754},
+          map: map,
+	  title: 'Suc Cinco Colonias',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 21.0559339, lng: -89.5336495},
+          map: map,
+	  title: 'Suc Plaza Boneta',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+
+
+        var marker = new google.maps.Marker({
+          position: {lat: 21.070079149700536, lng: -89.64514570244818},
+          map: map,
+	  title: 'Suc Plaza Santa Cruz',
+      icon:'imge/corona_titulo.png',
+
+        });
+
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	$.getJSON('js/sucursales.json', function(sucursales){
+		$.each(sucursales, function(i, sucursal){
+			sucursal_html = '<div onclick="moveToPosition('+sucursal.position.lat+','+sucursal.position.lng+');" class="direccion">'
+			sucursal_html += '<span>'+sucursal.sucursal+'</span>';
+			sucursal_html += '<p>'+sucursal.calle+'</p>';
+			sucursal_html += '<p>'+sucursal.colonia+'</p>';
+			sucursal_html += '<p>'+sucursal.tel+'</p>';
+			sucursal_html += '</div>';
+			$('#direcciones').append(sucursal_html);
+			setMarker(sucursal.position.lat, sucursal.position.lng, sucursal);
+		});
+		$('#direcciones').append('<div class="clear"></div>');
+	});
+
+		}
+        function setMarker(lat, lng, sucursal){
+	var latlng = new google.maps.LatLng(lat, lng);
+	var marker = new google.maps.Marker({
+		position: latlng,
+		map:map,
+		title:sucursal.sucursal,
+		icon:'imge/corona_titulo.png',
+	});
+	var infoWindow = new google.maps.InfoWindow({
+		content:'<span class="title_info">'+sucursal.sucursal+'</span><br/><span class="text_info">'+sucursal.calle+'<br/>'+sucursal.colonia+'<br/>'+sucursal.tel+'</span><div class="clear"></div><img src="'+sucursal.img+'" width="213" height="160" />',
+		size: new google.maps.Size(50,50),
+	});
+	google.maps.event.addListener(marker, 'click', function(){
+		infoWindow.open(map, marker);
+	})
+}
+        function moveToPosition(lat, lng){
+	var latlng = new google.maps.LatLng(lat, lng);
+	map.setZoom(17);
+	map.setCenter(latlng);
+	var is_safari_or_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit/i.test(navigator.userAgent);
+	if(!is_safari_or_uiwebview){
+		$.scrollTo($("#barra_titulo"), 300);
+	}
+}
+    
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+        </script>
+        <div id="map"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-text">
-                        <a href="#" class="navbar-brand">El Retorno</a>
-                        <p>©2022. Con el Sabor de Yucatán S.A de C.V. Todos los Derechos Reservados</p>
-                    </div>
-                </div>
+            <div class="row row-cols-3">
+              <div class="col"><h5>62-1</h5>
+
+                <b>Dirección:</b>
+
+                C. 62 #500 L-1 x 59 y 61
+                Col. Centro
+            <br>
+            <b> Teléfono:</b>
+                9 28 56 34</div>
+              <div class="col"><h5>63-1</h5>
+           
+               <b>Dirección:</b>
+               
+               C. 63 #574 Int B x 54 y 56
+               Col. Centro
+            <br>
+               <b> Teléfono:</b>
+                 9 28 75 78</div>
+
+              <div class="col"><h5>Matriz Oriente 65</h5>
+
+                <b>Dirección:</b>
+
+                C. 65 #229 x 6 y 8
+                Col. Cortés Sarmiento CP 97168
+                <br>
+                <b> Teléfono:</b>
+                9 29 28 29</div>
+              <div class="col"><h5>62-2</h5>
+
+                <b>Dirección:</b>
+                C. 62 #516 x 65 y 67
+                Col. Centro
+                <br>
+                <b> Teléfono:</b>
+                    9 23 43 73</div>
+            <div class="w-100"></div>
+
+            <div class="col">
+                <br>
+                <br>
+                <h5>Los Héroes</h5>
+
+                <b>Dirección:</b>
+                C. 137 #131 x 158 y 166
+
+                Col. Fraccionamiento Los Héroes
+                <br>
+                <b> Teléfono:</b>
+                    9 28 69 99 </div>
+
+                    <div class="col">
+                        <br>
+                        <br>
+                        <h5>T-1</h5>
+        
+                        <b>Dirección:</b>
+                        C. 41 #488 Int. 1 x 32 y 34
+                        Col. Industrial
+                        <br>
+                        <b> Teléfono:</b>
+                            9 22 55 32 </div>
+            <div class="col">
+            <br>
+            <br>
+            <h5>Plaza Fiesta</h5>
+                
+            <b>Dirección:</b>
+            C. 6 #400 x 21 local 57
+
+            Col. Díaz Ordaz
+            <br>
+            <b> Teléfono:</b>
+            9 43 22 82 </div>
+            <div class="col">
+                <br>
+                <br>
+                <h5>Ávila</h5>
+                    
+                <b>Dirección:</b>
+                C. 12 #300 x 27 Depto. 2
+                Col. Ávila Camacho
+                <br>
+                <b> Teléfono:</b>
+                1 68 21 18 </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <br>
+                    <br>
+                    <h5>Chuburná</h5>
+    
+                    <b>Dirección:</b>
+                    C. 21 #112 x 24 y 26
+
+                    Col. Chuburná de Hidalgo
+                    <br>
+                    <b> Teléfono:</b>
+                        5 18 30 95 </div>
+
+                        <div class="col">
+                            <br>
+                            <br>
+                            <h5>56</h5>
+            
+                            <b>Dirección:</b>
+                            C. 61 #485 x 54 y 56
+
+                            Depto 10 y 11 Col. Centro
+                            <br>
+                            <b> Teléfono:</b>
+                                9 24 64 31 </div>
+
+                                <div class="col">
+                                    <br>
+                                    <br>
+                                    <h5>Kukulcán</h5>
+                    
+                                    <b>Dirección:</b>
+                                    C. 28 #106-a x 19 y 20
+                                    Unidad Morelos
+                                    <br>
+                                    <b> Teléfono:</b>
+                                        9 29 63 50 </div>
+                                        <div class="col">
+                                            <br>
+                                            <br>
+                                            <h5>Matriz Plaza Dorada</h5>
+                            
+                                            <b>Dirección:</b>
+                                            C. 50 #143 x 15 y 21 D. 30
+                                            Col. Miguel Hidalgo
+                                            <br>
+                                            <b> Teléfono:</b>
+                                                 9 87 13 79 </div>
+
+
+        <div class="w-100"></div>
+
+        <div class="col">
+        <br>
+        <br>
+        <h5>Maya</h5>
+                                     
+        <b>Dirección:</b>
+        C. 25 #201b x 20 y 22 Loc. 7
+        Col: García Ginerés
+        <br>
+        <b> Teléfono:</b>
+        9 25 35 23 </div>
+    
+        <div class="col">
+            <br>
+            <br>
+            <h5>Oficinas</h5>
+                                         
+            <b>Dirección:</b>
+            C. 8 #540 b x 63c y 63d
+            Col. Centro
+            <br>
+            <b> Teléfono:</b>
+            9 29 34 13 / 9 40 17 57 </div>
+
+            <div class="col">
+                <br>
+                <br>
+                <h5>Xtabay</h5>
+                                             
+                <b>Dirección:</b>
+                C 33 Diag #212 Dept 1 33 y 35
+                Col. Poligono 108 Itzimna
+                <br>
+                <b> Teléfono:</b>
+                    5 18 60 20 </div>
+
+                    <div class="col">
+                        <br>
+                        <br>
+                        <h5>Producción 67</h5>
+                                                     
+                        <b>Dirección:</b>
+                        C. 67 #580 Int. B x 68 y 70
+                        Col. Centro
+                        <br>
+                        <b> Teléfono:</b>
+                            9 28 89 01</div>
+    
+                            <div class="w-100"></div>
+
+                            <div class="col">
+                            <br>
+                            <br>
+                            <h5>69</h5>
+                                                         
+                            <b>Dirección:</b>
+                            C. 69 #469-a x 54 y 56
+                            Col. Centro
+                            <br>
+                            <b> Teléfono:</b>
+                            9 28 84 99 </div>
+
+                            <div class="col">
+                                <br>
+                                <br>
+                                <h5>Caucel</h5>
+                                                             
+                                <b>Dirección:</b>
+                                C. 62 #655 Int. x 37 y 39a
+                                Col. Pedregales Caucel
+                                <br>
+                                <b> Teléfono:</b>
+                                4 61 43 28 </div>
+
+                                <div class="col">
+                                    <br>
+                                    <br>
+                                    <h5>Plaza Velaire</h5>
+                                                                 
+                                    <b>Dirección:</b>
+                                    C. 95 #496 L.6 Int. x 58 y 60
+                                    Col. Centro
+                                    <br>
+                                    <b> Teléfono:</b>
+                                    9 23 50 52 </div>
+
+                                    <div class="col">
+                                        <br>
+                                        <br>
+                                        <h5>Cinco Colonias</h5>
+                                                                     
+                                        <b>Dirección:</b>
+                                        C. 119 #380 L.2 Int. x 48 y 50
+                                        Col. 5 Colonias
+                                        <br>
+                                        <b> Teléfono:</b>
+                                            9 40 43 22 </div>
+
+                                            <div class="w-100"></div>
+
+                                            <div class="col">
+                                            <br>
+                                            <br>
+                                            <h5>Plaza Santa Cruz</h5>
+                                                                         
+                                            <b>Dirección:</b>
+                                            C. 74 #249 L. 9 Int. x 57-C y 59
+                                            Col. Las Americas
+                                            <br>
+                                            <b> Teléfono:</b>
+                                            9 23 39 15 </div>
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                            <div class="col"></div>
             </div>
-        </div>
-    </footer>
+          </div>
+        
+      </body>
+    </html>
     <!-- ***** Footer Area End ***** -->
 
     <!-- jQuery-2.2.4 js -->

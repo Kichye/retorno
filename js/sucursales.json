@@ -1,0 +1,245 @@
+[
+	{
+		"sucursal":"62-1",
+		"calle":"C. 62 #500 L-1 x 59 y 61",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 28 56 34",
+		"img":"img_sucursales/62-1.png",
+		"position":{
+			"lat":20.968003,
+			"lng":-89.624172
+		}
+	},
+	{
+		"sucursal":"63-1",
+		"calle":"C. 63 #574 Int B x 54 y 56",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 28 75 78",
+		"img":"img_sucursales/63-1.png",
+		"position":{
+			"lat":20.965761,
+			"lng":-89.619511
+		}
+	},
+	{
+		"sucursal":"Matriz Oriente 65",
+		"calle":"C. 65 #229 x 6 y 8",
+		"colonia":"Col. Cortés Sarmiento CP 97168",
+		"tel":"Tel. 9 29 28 29",
+		"img":"img_sucursales/sucursal-65-primera.png",
+		"position":{
+			"lat":20.959092,
+			"lng":-89.593722
+		}
+	},
+	{
+		"sucursal":"62-2",
+		"calle":"C. 62 #516 x 65 y 67",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 23 43 73",
+		"img":"img_sucursales/62-2.png",
+		"position":{
+			"lat":20.965003,
+			"lng":-89.624733
+		}
+	},
+	{
+		"sucursal":"Los Héroes",
+		"calle":"C. 137 #131 x 158 y 166",
+		"colonia":"Col. Fraccionamiento Los Héroes",
+		"tel":"Tel. 9 28 69 99",
+		"img":"img_sucursales/heroes.jpeg",
+		"position":{
+			"lat":20.9850119,
+			"lng":-89.5417228
+		}
+	},
+	{
+		"sucursal":"T-1",
+		"calle":"C. 41 #488 Int. 1 x 32 y 34",
+		"colonia":"Col. Industrial",
+		"tel":"Tel. 9 22 55 32",
+		"img":"img_sucursales/t-1.png",
+		"position":{
+			"lat":20.977839,
+			"lng":-89.604364
+		}
+	},	
+	{
+		"sucursal":"Plaza Fiesta",
+		"calle":"C. 6 #400 x 21 local 57",
+		"colonia":"Col. Díaz Ordaz",
+		"tel":"Tel. 9 43 22 82",
+		"img":"img_sucursales/fiesta.png",
+		"position":{
+			"lat":20.999514,
+			"lng":-89.596306
+		}
+	},
+	{
+		"sucursal":"Ávila",
+		"calle":"C. 12 #300 x 27 Depto. 2",
+		"colonia":"Col. Ávila Camacho",
+		"tel":"Tel. 1 68 21 18",
+		"img":"img_sucursales/avila.png",
+		"position":{
+			"lat":20.980836,
+			"lng":-89.584911
+		}
+	},
+	{
+		"sucursal":"Chuburná",
+		"calle":"C. 21 #112 x 24 y 26",
+		"colonia":"Col. Chuburná de Hidalgo",
+		"tel":"Tel. 5 18 30 95",
+		"img":"img_sucursales/chuburna.png",
+		"position":{
+			"lat":21.012072,
+			"lng":-89.636347
+		}
+	},
+	{
+		"sucursal":"56",
+		"calle":"C. 61 #485 x 54 y 56",
+		"colonia":"Depto 10 y 11 Col. Centro",
+		"tel":"Tel. 9 24 64 31",
+		"img":"img_sucursales/56.png",
+		"position":{
+			"lat":20.967028,
+			"lng":-89.619775
+		}
+	},
+	{
+		"sucursal":"Kukulcán",
+		"calle":"C. 28 #106-a x 19 y 20",
+		"colonia":"Unidad Morelos",
+		"tel":"Tel. 9 29 63 50",
+		"img":"img_sucursales/kukulcan.png",
+		"position":{
+			"lat":20.941194,
+			"lng":-89.597347
+		}
+	},
+	{
+		"sucursal":"Matriz Plaza Dorada",
+		"calle":"C. 50 #143 x 15 y 21 D. 30 ",
+		"colonia":"Col. Miguel Hidalgo",
+		"tel":"Tel. 9 87 13 79<span class=\"zona\">Servicio a domicilio con zona limitada.</span>",
+		"img":"img_sucursales/dorada.png",
+		"position":{
+			"lat":20.993472,
+			"lng":-89.652325
+		}
+	},
+	{
+		"sucursal":"Maya",
+		"calle":"C. 25 #201b x 20 y 22 Loc. 7",
+		"colonia":"Col: García Ginerés",
+		"tel":"Tel. 9 25 35 23",
+		"img":"img_sucursales/maya.png",
+		"position":{
+			"lat":20.986069,
+			"lng":-89.633286
+		}
+	},
+	{
+		"sucursal":"Oficinas",
+		"calle":"C. 8 #540 b x 63c y 63d",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 29 34 13 / 9 40 17 57",
+		"img":"img_sucursales/oficina.png",
+		"position":{
+			"lat":20.960375,
+			"lng":-89.594117
+		}
+	},
+	{
+		"sucursal":"Xtabay",
+		"calle":"C 33 Diag #212 Dept 1 33 y 35",
+		"colonia":"Col. Poligono 108 Itzimna",
+		"tel":"Tel. 5 18 60 20 <span class=\"zona\">Servicio a domicilio con zona limitada.</span>",
+		"img":"img_sucursales/xtabay.png",
+		"position":{
+			"lat":21.0012,
+			"lng":-89.572831
+		}
+	},
+	{
+		"sucursal":"Producción 67",
+		"calle":"C. 67 #580 Int. B x 68 y 70",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 28 89 01",
+		"img":"img_sucursales/67.png",
+		"position":{
+			"lat":20.964003,
+			"lng":-89.630500
+		}
+	},
+	{
+		"sucursal":"69",
+		"calle":"C. 69 #469-a x 54 y 56",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 28 84 99",
+		"img":"img_sucursales/69.png",
+		"position":{
+			"lat":20.961717,
+			"lng":-89.620033
+		}
+	},
+	{
+		"sucursal":"Caucel",
+		"calle":"C. 62 #655 Int. x 37 y 39a",
+		"colonia":"Col. Pedregales Caucel",
+		"tel":"Tel. 4 61 43 28",
+		"img":"",
+		"position":{
+			"lat":20.9999361,
+			"lng":-89.6894157
+		}
+	},
+
+	{
+		"sucursal":"Plaza Velaire",
+		"calle":"C. 95 #496 L.6 Int. x 58 y 60 ",
+		"colonia":"Col. Centro",
+		"tel":"Tel. 9 23 50 52",
+		"img":"",
+		"position":{
+			"lat":20.9440538,
+			"lng":-89.6280026
+		}
+	},
+		{
+		"sucursal":"Cinco Colonias",
+		"calle":"C. 119 #380 L.2 Int. x 48 y 50",
+		"colonia":"Col. 5 Colonias",
+		"tel":"Tel. 9 40 43 22",
+		"img":""    ,
+		"position":{
+			"lat":20.9321279,
+			"lng":-89.6212754
+		}
+	},
+	{
+		"sucursal":"Plaza Boneta",
+		"calle":"C. 22 #401 L. 6 Int. x 57-C y 61",
+		"colonia":"Col. Conkal",
+		"tel":"Tel. 5 65 03 05",
+		"img":"img_sucursales/plazaboneta.jpeg",
+		"position":{
+			"lat":21.0559339,
+			"lng":-89.5336495
+		}
+	},
+	{
+		"sucursal":"Plaza Santa Cruz",
+		"calle":"C. 74 #249 L. 9 Int. x 57-C y 59",
+		"colonia":"Col. Las Americas",
+		"tel":"Tel. 9 23 39 15",
+		"img":"img_sucursales/santacruz.png",
+		"position":{
+			"lat":21.070079149700536,
+			"lng":-89.64514570244818
+		}
+	}
+]
