@@ -1030,7 +1030,6 @@ li {
     box-shadow: 0 0 0 0.2rem rgba(212, 76, 13, 0.562);
 }
 
-
 .reservation-form textarea.form-control,
 .contact-form textarea.form-control {
     border: none;
@@ -1414,4 +1413,10 @@ blockquote img {
 	.card{
 		margin: 15px;
 	}
+}
+
+
+#containercontact select#select_departamento{
+    height: calc(2.98rem + 2px) ;
+
 }
