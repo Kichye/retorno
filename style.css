@@ -39,6 +39,10 @@ h6 {
     line-height: 1.3;
 }
 
+.texto-justificado{
+    text-align: justify;
+    }
+
 p {
     color: rgb(0, 0, 0);
     font-size: 16px;
@@ -742,7 +746,7 @@ li {
     width: auto;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 50px;
     z-index: 99;
     display: -webkit-box;
@@ -757,7 +761,7 @@ li {
 }
 
 .welcome-social-info > a {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
 
@@ -942,47 +946,15 @@ li {
 }
 
 
-/* Testimonials Area CSS */
+/* cards Area CSS */
 
-.caviar-testimonials-area {
-    padding-bottom: 200px;
+
+.card {
+
+    background-color: #cca90f;
 }
 
-.single-testimonial {
-    padding: 0 35px;
-}
 
-.testimonial-thumb-name {
-    margin-bottom: 30px;
-}
-
-.testimonial-thumb-name > img {
-    width: 80px!important;
-    height: 80px!important;
-    margin-right: 25px;
-    border-radius: 50%;
-}
-
-.testimonial-thumb-name .tes-name > h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.testimonial-thumb-name .tes-name > p {
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 12px;
-    font-weight: 600;
-    font-family: 'Work Sans', sans-serif;
-    margin-bottom: 0;
-}
-
-.caviar-testimonials-slides .center .single-testimonial {
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-}
 
 /* Reservation Area CSS */
 
@@ -1344,6 +1316,13 @@ blockquote img {
 
 
 /*Cards*/
+
+.card .card-contenido .card-imge{
+    width: 100%;
+	height: 200px;
+   
+    
+}
 .container-card{
 	width: 100%;
 	display: flex;
@@ -1357,14 +1336,14 @@ blockquote img {
 	padding: 20px;
 	margin-top: 20px;
 	text-align: center;
-	color: #7a7a7a;
+	color: #000000;
 }
 .card{
 	width: 100%;
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
-	background:#fff;
+	background:rgba(230, 160, 113, 0.562);
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
@@ -1383,11 +1362,11 @@ blockquote img {
 }
 .card .contenido-card h3{
 	margin-bottom: 15px;
-	color: #7a7a7a;
+	color: #000000;
 }
 .card .contenido-card p{
 	line-height: 1.8;
-	color: #6a6a6a;
+	color: #000000;
 	font-size: 14px;
 	margin-bottom: 5px;
 }
@@ -1420,3 +1399,71 @@ blockquote img {
     height: calc(2.98rem + 2px) ;
 
 }
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1{
+      text-align: center;
+      padding: 10px;
+      color: rgb(97, 96, 96);
+  }
+  .descripcion{
+      text-align: center;
+      padding: 5px 25px;
+      color: rgb(53, 53, 53);
+  }
+  
+  .cardd{
+      width: 100%;
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+  }
+  .card__perfil{
+      width: 310px;
+      padding: 20px;
+      box-shadow: 1px 1px 5px rgba(201, 201, 201, 0);
+      border: solid rgba(3, 133, 255, 0) 2px;
+      border-radius: 10px;
+  }
+  .card__perfil:hover{
+      border: solid rgb(255, 125, 3) 2px;
+  }
+  .card__perfil:hover img{
+      transform: rotate(0);
+  }
+  .imgcardd{
+      width: 140px;
+      border-radius: 80%;
+      box-shadow: 2px 2px 5px rgba(216, 216, 216, 0);
+      transform: rotate(-30deg);
+      transition: all .3s;
+  }
+  .card__nombre{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+  }
+  hr{
+      width: 100%;
+      height: 4px;
+      background: rgb(223, 221, 221);
+      margin: 20px 5px;
+  }
+  .card__button{
+      text-align: center;
+  }
+  .enlace{
+      background: rgb(0, 110, 255);
+      padding: 8px 20px;
+      color: white;
+      text-decoration: none;
+  }
