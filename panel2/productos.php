@@ -3,11 +3,10 @@
 include("conexion.php");
 $con=conectar();
 
-$sql="SELECT * FROM tabla_productos";
-$query=mysqli_query($con,$sql);
 
-$row=mysqli_fetch_array($query);
+// $row=mysqli_fetch_array($query);
 
+                                   
 ?>
 
 
@@ -254,21 +253,14 @@ $row=mysqli_fetch_array($query);
                         <div class="col-md-3">
                             <h1>Ingrese Datos</h1>
                            
-                                <form action="insertar.php" method="POST>">
+                                <form action="insertar.php" method="POST" enctype="multipart/form-data">
                                 
                                 <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
                                 <input type="text" class="form-control mb-3" name="descripcion" placeholder="Descripcion">
                                 <input type="text" class="form-control mb-3" name="categoria" placeholder="Categoria">
-                               
-                                <div class="form-group">
-                                
-                                <input type="file" class="form-control-file" name="foto">
+                                <input type="file" class="form-control-file" name="imagen" multiple>
+                                <input type="submit" class="btn btn-danger" name="guardar" value="Enviar">
 
-                                </div>
-                                <div class="form-group">
-                                    <!-- boton enviar -->
-                                </div>
-                                <input type="submit" class="btn btn-primary" name="guardar">
                             </form>
 
 
@@ -278,11 +270,11 @@ $row=mysqli_fetch_array($query);
                             <table class="table">
                                 <thead class="table-success table-striped">
                                     <tr>
-                                        <th>Id</th>
-                                        <th>Nombre</th>
-                                        <th>Descripcion</th>
-                                        <th>Categoria</th>
-                                        <th>Imagen</th>
+                                        <th>ID</th>
+                                        <th>NOMBRE</th>
+                                        <th>DESCRIPCION</th>
+                                        <th>CATEGORIA</th>
+                                        <th>IMAGEN</th>
                                         <th></th>
                                         <th></th>
                                     </tr>
@@ -290,20 +282,31 @@ $row=mysqli_fetch_array($query);
 
                                 <tbody>
                                     <?php
-                                        while($row=mysqli_fetch_array($query)){
+                                    
+                                            $content = 1; 
+                                            $sql="SELECT * FROM tabla_productos";
+                                            $query=mysqli_query($con,$sql);
+
+                                        while($row=mysqli_fetch_assoc($query)){
                                         ?>
                                             <tr>
-                                                <th><?php echo $row['id']?></th>
+                                                <th><?php echo $content?></th>
                                                 <th><?php echo $row['nombre']?></th>
                                                 <th><?php echo $row['descripcion']?></th>
                                                 <th><?php echo $row['categoria']?></th>
-                                                <th><?php echo $row['imagem']?></th>
+                                                <td>
+
+                                            <img width="100" src="data:<?php echo $row['tipo']; ?>;base64,<?php echo  base64_encode($row['imagen']); ?>">
+
+                                            </td>
                                                 <th><a href="actualizar.php?id=<?php echo $row['id']?>" class="btn btn-info">Editar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Eliminar</a></th>
+                                                <th><a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger" name="eliminar" value="eliminar">Eliminar</a></th>
+                                            
                                             </tr>
+                                          
 
                                             <?php
-
+                                            $content++;
                                         }
 
                                         ?>
