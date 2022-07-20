@@ -80,29 +80,12 @@ $con=conectar();
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header"></h6>
                         <a class="collapse-item active" href="productos.php">Productos</a>
-                        <a class="collapse-item" href="cards.html">Página 2</a>
+                        <a class="collapse-item" href="carusel.php">Slider</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Apartado de Páginas</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header"></h6>
-                        <a class="collapse-item" href="utilities-color.html">Página 1</a>
-                        <a class="collapse-item" href="utilities-border.html">Página 2</a>
-                        <a class="collapse-item" href="utilities-animation.html">Página 3</a>
-                        <a class="collapse-item" href="utilities-other.html">Página 4</a>
-                    </div>
-                </div>
-            </li>
+           
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -123,30 +106,12 @@ $con=conectar();
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pantallas:</h6>
                         <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Otras Páginas:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <a class="collapse-item" href="register.php">Registro</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Extra</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tablas</span></a>
-            </li>
-
+            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -255,13 +220,23 @@ $con=conectar();
                            
                                 <form action="insertar.php" method="POST" enctype="multipart/form-data">
                                 
-                                <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
-                                <input type="text" class="form-control mb-3" name="descripcion" placeholder="Descripcion">
-                                <input type="text" class="form-control mb-3" name="categoria" placeholder="Categoria">
-                                <input type="file" class="form-control-file" name="imagen" multiple>
+                                <input type="text" class="form-control mb-3" required name="nombre" placeholder="Nombre">
+                                <input type="text" class="form-control mb-3" required name="descripcion" placeholder="Descripcion">
+                                <h5>Categoria</h5>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required name="categoria">
+  
+  <option value="Temporada">Temporada</option>
+  <option value="Pasteles">Pasteles</option>
+  <option value="Ensalada">Ensalda</option>
+  <option value="Pan">Pan</option>
+</select>
+                                <br>
+                                <input type="file" class="form-control-file" required name="imagen" multiple> <br>
                                 <input type="submit" class="btn btn-danger" name="guardar" value="Enviar">
 
                             </form>
+
+                            <br>
 
 
                         </div>
@@ -284,8 +259,8 @@ $con=conectar();
                                     <?php
                                     
                                             $content = 1; 
-                                            $sql="SELECT * FROM tabla_productos";
-                                            $query=mysqli_query($con,$sql);
+                                            $sql="SELECT * FROM productos";
+                                            $query=mysqli_query($conexion,$sql);
 
                                         while($row=mysqli_fetch_assoc($query)){
                                         ?>
@@ -296,7 +271,7 @@ $con=conectar();
                                                 <th><?php echo $row['categoria']?></th>
                                                 <td>
 
-                                            <img width="100" src="data:<?php echo $row['tipo']; ?>;base64,<?php echo  base64_encode($row['imagen']); ?>">
+                                            <img width="100" src="<?php echo $row['img']?>">
 
                                             </td>
                                                 <th><a href="actualizar.php?id=<?php echo $row['id']?>" class="btn btn-info">Editar</a></th>

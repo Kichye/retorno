@@ -18,4 +18,6 @@ function conectar(){
 
 }
 
+$conexion=mysqli_connect("localhost", "root", "", "loginret");
+
 ?>

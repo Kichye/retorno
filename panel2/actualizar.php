@@ -1,12 +1,11 @@
 <?php
 
     include("conexion.php");
-    $con=conectar();
 
     $id=$_GET['id'];
 
-    $sql="SELECT * FROM tabla_productos WHERE id='$id'";
-    $query=mysqli_query($con,$sql);
+    $sql="SELECT * FROM productos WHERE id='$id'";
+    $query=mysqli_query($conexion,$sql);
 
     $row=mysqli_fetch_array($query); 
     ?>

@@ -1,51 +1,62 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+
 <?php
-include("conexion.php");
-$con=conectar();
-
-if(!empty($_POST['guardar'])){
-    echo 'despues de isset';
-    $check = getimagesize($_FILES['imagen']['tmp_name']);
-   if ($check !== false) { 
-        echo 'insertar';
-$tipoArchivo=$_FILES['imagen']['type'];
-$permitido=array("image/png","image/jpeg");
-if( in_array($tipoArchivo,$permitido) ==false ){
-    die("Archivo no permitido");
-}
-$nombreArchivo=$_FILES['imagen']['name'];
-$tamanoArchivo=$_FILES['imagen']['size'];
-$imagenSubida=fopen($_FILES['imagen']['tmp_name'],'r');
-$binariosImagen=fread($imagenSubida,$tamanoArchivo);
-$imagen = $_FILES['imagen']['tmp_name'];
-$imgContent = addslashes(file_get_contents($imagen));
-// include_once "productos.php";
-// $con = mysqli_connect($db_host,$db_user,$db_pass,$db_database);
-$binariosImagen=mysqli_escape_string($con,$binariosImagen);
-// $query = "INSERT INTO imagenes (nombre       ,imagen            ,tipo) values
-
-//                                         ('".$binariosImagen."')
-// ";
 $nombre=$_POST['nombre'];
 $descripcion=$_POST['descripcion'];
-$categoria=$_POST['categoria']; 
+$categoria=$_POST['categoria'];
+$imgr=$_FILES['imagen'] ['name'];
+$archivo=$_FILES['imagen']['tmp_name'];
+$ruta="img";
 
+$ruta=$ruta."/".$imgr;
+move_uploaded_file($archivo,$ruta);
 
+$conexion=mysqli_connect("localhost", "root", "", "loginret");
+$insertar="INSERT INTO  productos VALUES ('','$nombre', '$descripcion', '$categoria', '$ruta')";
+$query=mysqli_query($conexion,$insertar);
 
-
-$sql="INSERT INTO tabla_productos(nombre, descripcion, categoria, tipo,  imagen) VALUES('$nombre','$descripcion','$categoria', '$tipoArchivo', '$binariosImagen')";
-$query= mysqli_query($con,$sql);
-
-
-
-if($query){
-    Header("Location: productos.php");
-
-} else{
-
-}
+if($query)
+{
+    ?>
+    <?php
+    header("location:productos.php");
+    ?>
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+  <div>
+     ¡Todo salió Genial!
+  </div>
+</div>
     
+    <?php
+    
+}
+else
+{
+    ?>
+    <?php
+    include("productos.php");
+    ?>
+      <div class="alert alert-danger" role="alert">
+      Ingrese datos correctamente
+    </div>  
+    
+    <?php
+}
 
-        }
-    }
+
+
 
 ?> 

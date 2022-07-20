@@ -1,12 +1,11 @@
 <?php
 
 include("conexion.php");
-$con=conectar();
 
 $id=$_GET['id'];
 
-$sql="DELETE FROM tabla_productos where id='$id'";
-$query=mysqli_query($con,$sql);
+$sql="DELETE FROM productos where id='$id'";
+$query=mysqli_query($conexion,$sql);
 
 
 if($query){
