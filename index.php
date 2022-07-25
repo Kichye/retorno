@@ -68,7 +68,7 @@
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg align-items-center">
                         <a title="Principal"  href="index.php" class="navbar-brand">
-                        <img src="panel2/img/corona_titulo.png" alt="Principal">  El Retorno</a>
+                        <img src="panel2/img/corona_titulo.png" alt="Principal"> El Retorno</a>
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <div class="collapse navbar-collapse" id="caviarNav">
@@ -92,7 +92,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="menu.html">Productos Completos</a>
+                                        <a class="dropdown-item" href="menu.php">Productos Completos</a>
                                         <a class="dropdown-item" href="servicios.html">Sucursales</a>
                                         <a class="dropdown-item" href="trabajo.html">Bolsa de Trabajo</a>
                                     </div>

@@ -71,22 +71,22 @@
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#home">Inicio<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="index.php">Inicio<span class="sr-only">(current)</span></a>
                                 </li>
                                
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html#about">Quienes Somos</a>
+                                    <a class="nav-link" href="index.php#about">Quienes Somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html#menu">Productos</a>
+                                    <a class="nav-link" href="index.php#menu">Productos</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html#testimonial">Testimonios</a>
+                                    <a class="nav-link" href="index.php#testimonial">Testimonios</a>
                                 </li>
                                
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contacto</a>
+                                    <a class="nav-link" href="contact.php">Contacto</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
@@ -139,27 +139,27 @@
                     <div id="sugerencias"></div>
                 </div>
                      
-                <form class="needs-validation" novalidate>
+                <form class="wow fadeInUp"  method="post" >
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
-                        <label for="validationTooltip01">Nombre</label>
-                        <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                        <label >Nombre</label>
+                        <input type="text" class="form-control" id="cf-name" name="nombre" >
                       </div>
                       <div class="col-md-6 mb-3">
-                        <label for="validationTooltip02">Apellido</label>
-                        <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                        <label >Asunto</label>
+                        <input type="text" class="form-control" id="cf-subject" name="asunto" >
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
-                        <label for="validationTooltip03">Teléfono</label>
-                        <input type="text" class="form-control" id="validationTooltip03" required>
+                        <label >Teléfono</label>
+                        <input type="text" class="form-control" id="cf-Tel" name="tel">
                        
                       </div>
                       <div class="col-md-6 mb-3">
                         <!-- <div class="departamento"> -->
-                        <label for="validationTooltip04">Departamento</label>
-                        <select id="select_departamento" class="form-control col-sm-12 col-md-12" required>
+                        <label >Departamento</label>
+                        <select id="cf-dep" class="form-control col-sm-12 col-md-12" name="departamento">
                           <option selected disabled value=""></option>
                           <option>Ventas</option>
                           <option>Compras</option>
@@ -169,31 +169,36 @@
                       </div>
                       <div class="col-md-12 mb-3">
                         <!-- <div class="email"> -->
-                        <label for="validationTooltip02">Email</label>
-                        <input type="text" class="form-control" id="validationemail" value="" required>
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="cf-email" name="email">
                        <!-- </div> -->
                       </div>
-                     
-                      <form class="was-validated">
+
                         <!-- <div class="mensaje"> -->
                             <div class="col-md-12 mb-3">
                           <label for="validationTextarea">Mensaje</label>
-                          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Escribe aquí" required></textarea>
+                          <textarea class="form-control" rows="6" id="cf-message" name="mensaje" placeholder=" Escribe aquí"></textarea>
                           
                         </div>
-                      </form>
-                      
-                    </div>
-                    <div class="btnenviar">
-                    <a href="" class="btn caviar-btn"><span></span>Enviar</a>
+                        <div class="btnenviar">
+                    <button type="submit" class="form-control" id="cf-submit" name="submit">Enviar Mensaje</button>
+                    
                 </div>
+                
                 </form>
+                <?php 
+                include ("contactmail.php"); 
+                ?>
+                      
+                </div>
             </div>
         </div>
+        
         <div class="caviar-map-area wow fadeInRightBig" data-wow-delay="0.5s">
             <img src="imge/banner_3.png" alt="">
         </div>
     </div>
+
    
     <!-- ***** Contact Area End ***** -->
 
